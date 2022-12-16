@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body {
+  background-image: url("../image/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+}
+input[type="text"] {
+  border-radius: 12px;
+}
+.text {
+  text-align: center;
+  margin: 5%;
+  color: white;
+}
+.text h2,
+.text h3 {
+  font-weight: 700;
+}
+.bg {
+  background: linear-gradient(270deg, #9ea9e4 0%, #3787c9 100%);
+  border-radius: 10px;
+  padding: 1rem 10px;
+}
+
+.totalDeathsDiv {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+.totalDeathsDiv .icon {
+  width: 3rem;
+  border: none;
+  height: 3rem;
+  margin: 10px auto;
+}
+.totalDeaths {
+  font-size: 18px;
+  margin-top: 5px;
+  font-weight: 600;
+}
+.nama-kota {
+  margin-top: 1rem;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+.grafik {
+  font-size: 32px;
+  color: white;
+  font-weight: 700;
+}
+.kota {
+  font-size: 35px;
+  color: white;
+  font-weight: 600;
+}
+.hari .bi {
+  color: black;
+  margin-right: 5px;
+  font-weight: 600;
+}
+.hari span {
+  color: white;
+  font-weight: 600;
+}
+.overlay {
+  z-index: 9999;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  text-align: center;
+  background: rgb(255, 255, 255, 0.7);
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  top: 50%;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid red;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: red transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
